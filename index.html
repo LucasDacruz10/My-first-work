@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programashiters</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            max-height: 100px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0.8rem 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        /* CONTEÚDO */
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #ff4d4d;
+            padding-left: 0.8rem;
+            transition: 0.3s;
+        }
+
+        h2:hover {
+            padding-left: 1.2rem;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        article, section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1.5rem;
+        }
+
+        article:last-of-type, section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Programashiters">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <p>
+            Bem-vindo ao meu site! Meu site aborda temas e assuntos relacionados à programação e tecnologia,
+            e outras <s>shits</s>
+            <small>(não esse tipo de <span class="vermelho">programa</span> que você está pensando 😏)</small>
+        </p>
+
+        <article id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma <strong>equipe</strong> de programadores apaixonados por tecnologia e inovação.</p>
+        </article>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Programashiters</p>
+    </footer>
+
+</body>
+
+</html>
