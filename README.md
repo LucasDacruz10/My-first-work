@@ -4,7 +4,7 @@ Um site simples sobre programação e tecnologia criado com HTML e CSS.
 
 ## Sobre o Projeto
 
-Este é meu primeiro projeto! O site aborda temas relacionados à programação e tecnologia, com uma interface limpa e responsiva.
+Este é meu primeiro projeto! O site aborda temas relacionados à programação e tecnologia, com uma interface limpa e responsiva aos poucos irei adicionar mais funcionalidades conforme o avanço de meus conhecimentos
 
 ## Tecnologias Utilizadas
 
