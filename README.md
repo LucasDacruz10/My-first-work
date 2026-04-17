@@ -21,8 +21,8 @@ Este é meu primeiro projeto! O site aborda temas relacionados à programação 
 ## Como Acessar
 
 Você pode acessar o site diretamente pelos links de deploy:
-- **Vercel**: [Em breve]
-- **Netlify**: [Em breve]
+- **Vercel**: https://my-first-work-phi.vercel.app/
+- **Netlify**: https://69e25e9331dedf04c79a8088--chipper-tartufo-243da7.netlify.app/
 
 ## Autor
 
