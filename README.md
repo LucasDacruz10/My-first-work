@@ -12,12 +12,17 @@ Este é meu primeiro projeto! O site aborda temas relacionados à programação 
 - CSS3
 - JS
 
+## Recursos novos e observações
+Olá a todos, Trazendo novas mudanças ao meu projeto, como novos designs mais tecnológicos mas mantendo a alma do projeto, novo layout e mais interações com o publico, e uma observação preciosa TODOS os números usados no site são totalmente  fictícios, como números e devs conectados ao programashiters, obrigado pela atenção e até uma proxima atualização ;)
+
 ## Recursos
 
 - Design responsivo
 - Menu de navegação
 - Seções de Sobre e Contato
 - Estilo moderno com transições suaves
+- ferramentas modernas
+
 
 ## Como Acessar
 
