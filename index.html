@@ -5,145 +5,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programashiters</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        /* HEADER */
-        header {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 120px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo img {
-            max-height: 100px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        /* MENU */
-        nav {
-            background-color: #444;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav li {
-            margin: 0.8rem 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff4d4d;
-        }
-
-        /* CONTEÚDO */
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        h2 {
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            border-left: 4px solid #ff4d4d;
-            padding-left: 0.8rem;
-            transition: 0.3s;
-        }
-
-        h2:hover {
-            padding-left: 1.2rem;
-        }
-
-        .vermelho {
-            color: red;
-        }
-
-        article, section {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 1.5rem;
-        }
-
-        article:last-of-type, section:last-of-type {
-            border-bottom: none;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            margin-top: 2rem;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="title-logo">
+                <div class="logo" aria-label="Logo Programashiters">
+                    <img src="logo.webp" alt="Logo Programashiters">
+                    <span class="logo-fallback">P</span>
+                </div>
+                <h1>Programashiters</h1>
+            </div>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo Programashiters">
+            <button class="toggle-button" type="button" aria-label="Alternar tema">
+                Modo escuro
+            </button>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#missao">Missão</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main id="home">
-        <p>
-            Bem-vindo ao meu site! Meu site aborda temas e assuntos relacionados à programação e tecnologia,
-            e outras <s>shits</s>
-            <small>(não esse tipo de <span class="vermelho">programa</span> que você está pensando 😏)</small>
-        </p>
+    <main id="home" class="container">
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Comunidade tech + networking</span>
+                <h2>Conecte-se com devs apaixonados por código, inovação e criatividade.</h2>
+                <p>
+                    O Programashiters reúne desenvolvedores, estudantes e entusiastas da tecnologia em um espaço
+                    descontraído para trocar experiências, aprender novas stacks e criar conexões reais com a comunidade.
+                </p>
 
-        <article id="sobre">
-            <h2>🚀 Sobre Nós</h2>
-            <p>Somos uma <strong>equipe</strong> de programadores apaixonados por tecnologia e inovação.</p>
-        </article>
+                <div class="action-row">
+                    <a href="#contato" class="primary-btn">Fale conosco</a>
+                    <a href="#sobre" class="secondary-btn">Conhecer mais</a>
+                </div>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco!</p>
+                <div class="stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>devs ativos</span>
+                    </div>
+                    <div class="stat">
+                        <strong>12</strong>
+                        <span>tecnologias</span>
+                    </div>
+                    <div class="stat">
+                        <strong>24/7</strong>
+                        <span>comunidade</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="mini-panel-header">
+                    <span>Stack em destaque</span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="stack-badges">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>IA</span>
+                </div>
+
+                <div class="info-card-group">
+                    <div class="info-card">
+                        <strong>+8 mil</strong>
+                        <span>mensagens trocadas</span>
+                    </div>
+                    <div class="info-card">
+                        <strong>89%</strong>
+                        <span>dos membros aprendem com a comunidade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="page-section">
+            <h2 class="section-title">Por que participar?</h2>
+            <p class="section-copy">
+                Nosso objetivo é criar um ambiente acolhedor e dinâmico para quem ama tecnologia, aprendizado constante e networking natural.
+            </p>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="icon">💬</div>
+                    <h3>Troca de experiências</h3>
+                    <p>Compartilhe histórias, dicas, erros e aprendizados com outros devs de diferentes níveis.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon">🧠</div>
+                    <h3>Múltiplas linguagens</h3>
+                    <p>Explore JavaScript, Python, C#, Java, IA e outras áreas para ampliar sua visão de mercado.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon">🌐</div>
+                    <h3>Networking leve</h3>
+                    <p>Conecte-se com pessoas reais, crie oportunidades e fortaleça sua presença profissional.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="page-section">
+            <h2 class="section-title">Tecnologias e áreas</h2>
+            <p class="section-copy">
+                A plataforma mentalmente combina educação, comunidade, inovação e profundidade técnica em uma experiência moderna.
+            </p>
+
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <div class="tech-icon">⚛️</div>
+                    <h3>Frontend</h3>
+                    <p>React, HTML, CSS, UX e desenvolvimento visual moderno.</p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">🖥️</div>
+                    <h3>Backend</h3>
+                    <p>APIs, autenticação, banco de dados e arquitetura escalável.</p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">🤖</div>
+                    <h3>IA & automação</h3>
+                    <p>Chatbots, produtividade, automações e inteligência aplicada.</p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>DevOps, deploy, otimização, SEO e manutenção eficiente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="missao" class="page-section">
+            <h2 class="section-title">Nossa missão</h2>
+            <div class="mission-grid">
+                <article class="mission-card">
+                    <p class="section-copy">
+                        Convocar todos os devs apaixonados por aprendizado, tecnologia e cultura digital para um espaço
+                        leve, inspirador e extremamente útil para crescer profissionalmente.
+                    </p>
+
+                    <ul>
+                        <li>Aprender com pessoas de diferentes níveis e áreas.</li>
+                        <li>Trocar conhecimentos sem formalismos e com bom humor.</li>
+                        <li>Criação de redes relevantes para carreira e projetos.</li>
+                    </ul>
+                </article>
+
+                <article class="mission-card">
+                    <h3>Valores da comunidade</h3>
+                    <ul>
+                        <li>Curiosidade tecnológica</li>
+                        <li>Respeito e colaboração</li>
+                        <li>Inovação constante</li>
+                        <li>Aprendizado prático</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="page-section">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-panel">
+                    <h3>Vamos conversar</h3>
+                    <p>Se você quer participar da comunidade, sugerir ideias, colaborar ou apenas conhecer mais, fale com a gente.</p>
+                    <ul class="contact-list">
+                        <li>📧 Programashiters10@gmail.com</li>
+                        <li>📍 Curitiba, PR</li>
+                        <li>💡 Networking, código e inovação</li>
+                    </ul>
+                </div>
+
+                <div class="contact-panel">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Seu nome" aria-label="Seu nome">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail">
+                        <textarea placeholder="Sua mensagem" aria-label="Sua mensagem"></textarea>
+                        <button type="submit" class="primary-btn">Enviar mensagem</button>
+                        <div class="form-message" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <button class="faq-question" type="button">
+                        <span>O site é para iniciantes?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Sim! O Programashiters é pensado para pessoas em diferentes níveis, desde iniciantes até devs mais avançados.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Quais tecnologias vocês abordam?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Abordamos frontend, backend, infraestrutura, automação, IA, UX, carreira e boas práticas de desenvolvimento.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Tem conteúdo atualizado?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Sim. A ideia é manter a comunidade em movimento com conteúdos atuais, tendências e aprendizados práticos.
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Programashiters</p>
+        <p>&copy; <span id="year"></span> Programashiters</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
