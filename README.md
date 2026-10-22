@@ -1,6 +1,6 @@
 # My First Work 🚀
 
-Um site simples sobre programação e tecnologia criado com HTML e CSS.
+Um site simples sobre programação e tecnologia criado com HTML, CSS e JS
 
 ## Sobre o Projeto
 
