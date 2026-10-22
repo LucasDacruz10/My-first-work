@@ -10,6 +10,7 @@ Este é meu primeiro projeto! O site aborda temas relacionados à programação 
 
 - HTML5
 - CSS3
+- JS
 
 ## Recursos
 
